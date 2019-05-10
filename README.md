@@ -1,2 +1,3 @@
-# TestJsonSchema-PS
-Pester Test module for JSON schema validation
+# PowerShell Module - TestJsonSchema
+
+This module performs Pester Test for JSON schema validation
