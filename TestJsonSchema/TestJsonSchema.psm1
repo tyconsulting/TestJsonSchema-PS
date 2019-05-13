@@ -21,7 +21,7 @@ Function Test-JsonSchema
     If ($PSCmdlet.ParameterSetName -eq 'ProduceOutputFile')
     {
       #Common - File content tests
-      $JsonSchemaTestResult = Invoke-Pester -script @{path = $JsonSchemaTestFilePath; Parameters=@{JsonPath = $path; SchemaPath = $SchemaPath}} -OutputFile $OutputFile -OutputFormat $OutputFormat -PassThru
+      $JsonSchemaTestResult = Invoke-Pester -script @{path = $JsonSchemaTestFilePath; Parameters=@{JsonPath = $Jsonpath; SchemaPath = $SchemaPath}} -OutputFile $OutputFile -OutputFormat $OutputFormat -PassThru
     } else {
       $JsonSchemaTestResult = Invoke-Pester -script @{path = $JsonSchemaTestFilePath; Parameters=@{JsonPath = $JsonPath; SchemaPath = $SchemaPath}} -PassThru
     }
